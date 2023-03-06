@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time</title>
+    <style>
+
+        body{
+            background-color:darkcyan;
+
+        }
+        p{
+            color:white;
+            font-family: 'Inconsolata', monospace;
+            text-align: center;
+        }
+        button{
+            display: flex;
+            margin: auto;
+            padding:5px;
+            border-radius:10px;
+            color:white;
+            background-size:300% 300%;
+            background-image: linear-gradient(45deg,rgb(153, 255, 153),darkblue);
+            animation:color 2s ease-in-out infinite;
+
+        }
+        @keyframes color{
+            0%{
+                background-position: 0 50%;
+            }
+            50%{
+                background-position: 50% 100%;
+            }
+            100%{
+                background-position:0 50%;
+            }
+        }
+        .con{
+            border-style: solid;
+            margin: auto;
+            margin-top:200px;
+           
+        }
+    </style>
+</head>
+<body>
+    <div class="con">
+    <p>What's the time ?</p>
+    <button onclick='document.getElementById("time").innerHTML=Date()'>click here</button>
+     <p id="time"></p>
+    </div>
+</body>
+</html>
