@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bulb </title>
+    <style>
+        *{
+            margin:auto;
+            padding:0;
+            text-align: center;
+            font-family: 'inconsolata',monospace;
+            margin-top:20px;
+        }
+        body{
+            background-color:rgb(0, 110, 255);
+        }
+        h1{
+            color:white;
+            margin-top:20px;
+        }
+        button{
+            padding:5px;
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Can you turn on the bulb ?</h1>
+    <button onclick='document.getElementById("off").src="bulboff.png"'>OFF</button>
+    <img id="off" src="bulboff.png">
+    <button onclick='document.getElementById("off").src="bulbon.png"'>ON</button>
+
+</body>
+</html>
